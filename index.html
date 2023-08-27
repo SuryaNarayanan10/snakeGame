@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game</title>
+    <style>
+        #container{
+            background-color: black;
+            width:600px;
+            height:600px;
+            margin:auto;
+            border: 3px solid red;
+            position:relative;
+        }
+        .snake{
+            background-color:green;
+            width:24px;
+            height:24px;
+            position:absolute;
+            outline:1px solid black;
+        }
+        .food{
+            background-color:red;
+            width:24px;
+            height:24px;
+            position:absolute;
+            outline:1px solid black;
+        }
+        #display{
+            padding:0px;
+            margin:0px;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    <div id="display">
+        <h1>Snake Game</h1>
+        <h3>Your Score</h3>
+        <h1 id="score">0</h1>
+        <h1 id="gameOver"></h1>
+    </div>
+    <div id="container">
+        <div id="f" class="food">
+        </div>
+        <div id="b0" class="snake">
+        </div>
+    </div> 
+    <script src="index.js"></script>
+</body>
+</html>
